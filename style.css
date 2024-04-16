@@ -8,6 +8,7 @@
     --primary-color-2: rgb(236, 247, 255);
     --primary-color-3: rgb(181,181,181);
     --background-color: rgb(236, 247, 255);
+    --second-background-color: rgb(236,247,255);
     --secondary-color: black;
     --secondary-color-2: rgb(85,85,85);
     --button-background: rgb(53,53,53);
@@ -23,6 +24,7 @@
     --primary-color-2: rgb(30,31,53);
     --primary-color-3: rgb(74,74,74);
     --background-color: rgb(30, 31, 53);
+    --second-background-color: rgb(45,46,68);
     --secondary-color: white;
     --secondary-color-2: rgb(170,170,170);
     --button-background: rgb(202,202,202);
@@ -133,6 +135,8 @@ nav a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  z-index: 9999;  
+  /* change */
 }
 
 .hamburger-icon span {
@@ -140,36 +144,42 @@ nav a:hover {
   height: 2px;
   background-color: var(--secondary-color);
   transition: all 0.3 ease-in-out;
+  z-index: 9999;
+  /* change */
 }
 
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: var(--background-color);
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-  z-index: 999;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    bottom: 0;
+    background-color: var(--second-background-color);
+    width: 12rem;
+    padding-top: 120px;
+    max-height: 0;
+    overflow-y: auto;
+    transition: max-height 0.5s ease-in-out, top 0.5s ease-in-out;
+    z-index: 999;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
 
 .menu-links li {
   list-style: none;
 }
 
 .menu-links.open {
-  max-height: 300px;
+    top: 0;
+  max-height: 100vh;
 }
 
 .hamburger-icon.open span:first-child {
@@ -333,6 +343,10 @@ section {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+.arrow:hover{
+    cursor: pointer;
 }
 
 .details-container{
