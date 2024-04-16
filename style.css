@@ -146,11 +146,12 @@ nav a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 999;
 }
 
 .menu-links a {
