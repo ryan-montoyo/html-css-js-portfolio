@@ -339,7 +339,7 @@ section {
     gap: 0.5rem;
   }
   
-  article .icon {
+  article, .icon {
     cursor: default;
   }
   
