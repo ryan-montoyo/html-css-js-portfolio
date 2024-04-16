@@ -158,7 +158,7 @@ nav a:hover {
     padding-top: 120px;
     max-height: 0;
     overflow-y: auto;
-    transition: max-height 0.5s ease-in-out, top 0.5s ease-in-out;
+    transition: max-height 0.4s ease-in-out, top 0.4s ease-in-out;
     z-index: 999;
   }
   
