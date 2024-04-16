@@ -150,15 +150,15 @@ nav a:hover {
 
 .menu-links {
     position: fixed;
-    top: -100vh;
-    right: 0;
+    top: 0;
+    right: -12rem;
     bottom: 0;
     background-color: var(--second-background-color);
     width: 12rem;
     padding-top: 120px;
-    max-height: 0;
+    max-height: 100vh;
     overflow-y: auto;
-    transition: max-height 0.4s ease-in-out, top 0.4s ease-in-out;
+    transition: right 0.4s ease-in-out;
     z-index: 999;
   }
   
@@ -178,8 +178,8 @@ nav a:hover {
 }
 
 .menu-links.open {
-    top: 0;
-  max-height: 100vh;
+    right: 0;
+    max-height: 100vh;
 }
 
 .hamburger-icon.open span:first-child {
