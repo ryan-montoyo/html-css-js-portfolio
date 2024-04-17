@@ -8,7 +8,7 @@
     --primary-color-2: rgb(236, 247, 255);
     --primary-color-3: rgb(181,181,181);
     --background-color: rgb(236, 247, 255);
-    --second-background-color: rgb(236,247,255);
+    --second-background-color: rgb(236, 247, 255); 
     --secondary-color: black;
     --secondary-color-2: rgb(85,85,85);
     --button-background: rgb(53,53,53);
@@ -16,6 +16,7 @@
     --button-border: rgb(53,53,53) 0.1rem solid;
     --button-border-2: rgb(255,255,255) 0.1rem solid;
     --container-border: rgb(163,163,163);
+    --gradient-fade: rgba(236, 247, 255, 0);
 }
 
 /* Dark Mode */
@@ -32,6 +33,7 @@
     --button-border: rgb(202,202,202) 0.1rem solid;
     --button-border-2: rgb(0,0,0) 0.1rem solid;
     --container-border: rgb(92,92,92);
+    --gradient-fade: rgba(146, 168, 255, 0.092);
 }
 
 * {
@@ -74,13 +76,13 @@ nav,
 nav {
   justify-content: space-around;
   height: 17vh;
+  background: linear-gradient(to bottom, var(--background-color) 70%, var(--gradient-fade));
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-
 }
 
 nav li:last-child{
@@ -121,6 +123,7 @@ nav a:hover {
 
 #hamburger-nav {
   display: none;
+  background: linear-gradient(to bottom, var(--background-color) 70%, var(--gradient-fade));
 }
 
 .hamburger-menu {
@@ -268,6 +271,14 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.linkedin-icon:hover{
+  cursor: pointer;
+}
+
+.github-icon:hover{
+  cursor: pointer;
 }
 
 /* ICONS */
@@ -485,4 +496,3 @@ section {
   footer p {
     text-align: center;
   }
-
