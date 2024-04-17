@@ -16,7 +16,7 @@
     --button-border: rgb(53,53,53) 0.1rem solid;
     --button-border-2: rgb(255,255,255) 0.1rem solid;
     --container-border: rgb(163,163,163);
-    --gradient-fade: rgba(236, 247, 255, 0);
+    --gradient-fade: rgba(0, 0, 0, 0.187);
 }
 
 /* Dark Mode */
