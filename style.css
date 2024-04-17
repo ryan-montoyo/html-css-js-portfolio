@@ -496,3 +496,7 @@ section {
   footer p {
     text-align: center;
   }
+
+  footer nav{
+    background: var(--background-color);
+  }
