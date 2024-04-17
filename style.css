@@ -501,4 +501,5 @@ section {
 
   footer nav{
     background: var(--background-color);
+    border-bottom: 1px solid var(--background-color);
   }
