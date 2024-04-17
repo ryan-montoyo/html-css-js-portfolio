@@ -76,7 +76,8 @@ nav,
 nav {
   justify-content: space-around;
   height: 17vh;
-  background: linear-gradient(to bottom, var(--background-color) 70%, var(--gradient-fade));
+  background: var(--background-color);
+  border-bottom: 1px solid var(--gradient-fade); /* Thin line at the bottom */
 }
 
 .nav-links {
@@ -123,7 +124,8 @@ nav a:hover {
 
 #hamburger-nav {
   display: none;
-  background: linear-gradient(to bottom, var(--background-color) 70%, var(--gradient-fade));
+  background: var(--background-color);
+  border-bottom: 1px solid var(--gradient-fade); /* Thin line at the bottom */
 }
 
 .hamburger-menu {
