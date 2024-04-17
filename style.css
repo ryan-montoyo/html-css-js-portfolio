@@ -28,7 +28,7 @@
     --second-background-color: rgb(45,46,68);
     --secondary-color: white;
     --secondary-color-2: rgb(170,170,170);
-    --button-background: rgb(202,202,202);
+    --button-background: white;
     --button-text-hover: lightgrey;
     --button-border: rgb(202,202,202) 0.1rem solid;
     --button-border-2: rgb(0,0,0) 0.1rem solid;
@@ -312,7 +312,7 @@ section {
 .btn-color-1,
 .btn-color-2 {
   background: var(--button-background-2);
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .btn-color-1:hover,
