@@ -292,6 +292,10 @@ section {
   cursor: pointer;
 }
 
+#profile .arrow{
+  bottom: 2.5rem;
+}
+
 /* ICONS */
 
 .icon {
@@ -361,10 +365,11 @@ section {
     border-radius: 2rem;
 }
 
-.arrow {
+
+.arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 10rem;
 }
 
 .arrow:hover{
@@ -382,7 +387,7 @@ section {
 }
 .section-container{
     gap: 4rem;
-    height: 80%;
+    height: 60%;
 }
 
 .section__pic-container{
