@@ -50,6 +50,10 @@ body {
   background-color: var(--background-color);
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -73,11 +77,15 @@ nav,
   align-items: center;
 }
 
+
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   justify-content: space-around;
   height: 17vh;
   background: var(--background-color);
-  border-bottom: 1px solid var(--gradient-fade); /* Thin line at the bottom */
+  border-bottom: 1px solid var(--gradient-fade);
 }
 
 .nav-links {
@@ -217,6 +225,7 @@ section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
+  scroll-margin-top: 130px;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -500,6 +509,7 @@ section {
   }
 
   footer nav{
+    z-index: 998;
     background: var(--background-color);
     border-bottom: 1px solid var(--background-color);
   }
