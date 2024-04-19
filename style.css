@@ -458,9 +458,12 @@ section {
 }
 
 .project-btn {
+
     color: var(--secondary-color);
     border-color: var(--container-border);
 }
+
+
 
 /* CONTACT */
 
