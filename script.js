@@ -8,6 +8,18 @@ function toggleMenu() {
     document.body.classList.toggle("menu-open");
 }
 
+function scrollToProfile() {
+    const profileSection = document.getElementById('profile');
+    profileSection.scrollIntoView({ behavior: 'smooth' });
+
+    // Close the menu if it's open
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    if (menu.classList.contains("open") && icon.classList.contains("open")) {
+        toggleMenu();
+    }
+}
+
 
 // Dark / light mode
 
