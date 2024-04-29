@@ -441,6 +441,11 @@ section {
   article, .icon {
     cursor: default;
   }
+
+  li #modeToggle {
+    cursor: pointer;
+  }
+  
   
 /* PROJECTS SECTION*/
 
