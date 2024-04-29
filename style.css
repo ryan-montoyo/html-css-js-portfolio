@@ -232,7 +232,7 @@ section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 110px;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -244,7 +244,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-    position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -252,11 +252,14 @@ section {
 
 }
 
+
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto;
+}
+.section__pic-container img[alt="John Doe profile picture"] {
   border-radius: 50%; /* Makes the container circular */
   border: 2px solid white; /* Adds a white border */
   overflow: hidden; /* Ensures the image stays within the circular container */
@@ -373,6 +376,10 @@ section {
 }
 
 .about-pic {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
     border-radius: 2rem;
 }
 
